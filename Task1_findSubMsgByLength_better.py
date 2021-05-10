@@ -64,7 +64,7 @@ def cropMsgByMaxLength(message, max_length) -> str:
         return ""
 
     # If the character next to output_msg is not a space, 
-    # we should remove last space and characters behind the space from output_msg 
+    # we should remove last space and the characters behind that space from output_msg 
     # to get a complete output message.
     if not message[max_length] == " ":
         output_msg =  removeSpaceAndFollowingChars(output_msg)
