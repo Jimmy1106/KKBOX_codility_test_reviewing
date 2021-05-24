@@ -21,4 +21,18 @@ def findMaxIntegerByFive(integer):
         return (-1)*min(buffer)
 
 
-print(findMaxIntegerByFive(-156))
+example_cases = [
+    826,
+    -156,
+    0,
+    100,
+    1,
+    # Fail case
+    -100,
+    99,
+    -1,
+    
+]
+
+for case in example_cases:
+    print("Input: %d, Output: %d" % (case, findMaxIntegerByFive(case)))
